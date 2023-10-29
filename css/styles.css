@@ -34,6 +34,18 @@ body {
   background-color: var(--primary-bg-color);
 }
 
+/* Спеціальний класс для приховування тегів/заголовків */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -207,10 +219,6 @@ body {
 /* Features section */
 .features.section {
   padding-bottom: 0;
-}
-
-.features .sect-title {
-  display: none;
 }
 
 .features .title {
@@ -456,10 +464,6 @@ body {
 /* Property filter */
 
 /* Our products section */
-.products-title {
-  display: none;
-}
-
 /* Property filter */
 .products-filter {
   display: flex;
@@ -556,14 +560,3 @@ body {
 
 /* End Products list */
 /* End Our products section */
-
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
