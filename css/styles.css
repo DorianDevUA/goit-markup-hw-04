@@ -282,6 +282,11 @@ body {
   width: calc((100% - 90px) / 4);
   padding-bottom: 30px;
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-list > .item + .item {
@@ -320,7 +325,11 @@ body {
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   color: #AFB1B8;
   background-color: var(--primary-bg-color);
   border-radius: 50%;
@@ -334,7 +343,6 @@ body {
 }
 
 .social-icon {
-  display: block;
   fill: currentColor;
 }
 /* End Social links */
@@ -354,7 +362,9 @@ body {
 }
 
 .customers-list .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 32px;
   color: #AFB1B8;
   border: 1px solid #AFB1B8;
@@ -369,7 +379,6 @@ body {
 }
 
 .customers-icon {
-  display: block;
   fill: currentColor;
 }
 /* End Regular customers */
@@ -394,7 +403,10 @@ body {
 /* End Site logo footer */
 
 /* Сontact in footer */
-.addr {
+.footer-contacts {
+  display: flex;
+  align-items: baseline;
+
   font-style: normal;
   line-height: 1.71;
 }
@@ -410,6 +422,30 @@ body {
 .contact-list .link:hover,
 .contact-list .link:focus {
   color: var(--accent-color);
+}
+
+.footer-contacts .title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-contacts > .item + .item {
+  margin-left: 70px;
+}
+
+.footer-contacts .social-link{
+  background-color: rgba(255, 255, 255, 0.10);
+  color: var(--white-color);
+}
+
+.footer-contacts .social-link.current,
+.footer-contacts .social-link:hover,
+.footer-contacts .social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* End Сontact in footer */
@@ -466,6 +502,16 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid transparent;
+}
+
+.product-list .item.current,
+.product-list .item:hover,
+.product-list .item:focus {
+  border: 1px solid #EEE;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+              0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .product-list .item:nth-child(3n) {
