@@ -34,8 +34,22 @@
 
       <!-- Сontacts in header -->
       <ul class="contacts">
-        <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="item">
+          <a class="link current" href="mailto:info@devstudio.com">
+            <svg class="contact-icon" width="16px" height="12px">
+              <use href="./images/sprite.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="item">
+          <a class="link" href="tel:+380961111111">
+            <svg class="contact-icon" width="10px" height="16px">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
       </ul>
       <!-- End Contacts in header -->
     </div>
@@ -59,7 +73,7 @@
 
         <!-- Products list -->
         <ul class="product-list">
-          <li class="item">
+          <li class="item current">
             <article class="card">
               <img class="card-thumb" src="./images/product-website-tehnokryak.jpg" alt="Промо веб-сайту 'Технокряк'" width="370" height="294">
               <div class="card-content">
@@ -158,17 +172,58 @@
   <!-- Site footer -->
   <footer class="page-footer">
     <div class="container">
-      <!-- Site logo footer -->
-      <a class="logo link" href="./index.html"><span class="logo-color">Web</span>Studio</a>
-      <!-- End Site logo footer -->
 
       <!-- Сontacts in footer -->
-      <address class="addr">
-        <ul class="contact-list">
-          <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
-          <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+      <address class="footer-contacts">
+        <div class="item">
+          <!-- Site logo footer -->
+          <a class="logo link" href="./index.html"><span class="logo-color">Web</span>Studio</a>
+          <!-- End Site logo footer -->
+          <ul class="contact-list">
+            <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
+            <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+
+        <!-- Social links in footer-->
+        <div class="item">
+          <h3 class="title">приєднуйтесь</h3>
+          <ul class="social-list">
+            <li class="item">
+              <a href="" class="social-link" aria-label="Instagram">
+                <svg class="social-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="" class="social-link current" aria-label="Twitter">
+                <svg class="social-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="" class="social-link" aria-label="Facebook">
+                <svg class="social-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="" class="social-link" aria-label="Linkedin">
+                <svg class="social-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Social links in footer-->
       </address>
       <!-- End Contacts in footer -->
     </div>
