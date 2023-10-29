@@ -34,18 +34,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-/* Спеціальний класс для приховування тегів/заголовків */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .link {
   text-decoration: none;
 }
@@ -560,3 +548,15 @@ body {
 
 /* End Products list */
 /* End Our products section */
+
+/* Спеціальний класс для приховування тегів/заголовків */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
